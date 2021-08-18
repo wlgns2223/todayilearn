@@ -1,0 +1,29 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: lightgreen;
+  margin: 1rem auto;
+}
+
+.box.active {
+  background-color: salmon;
+  transition: all 3000ms ease-in-out;
+}
+
+.myImg {
+  margin: 0 auto;
+  width: 200px;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+  transition: all 3000ms ease-in-out;
+}
+
+.container {
+  width: 400px;
+  height: 600px;
+  border: 1px solid red;
+  overflow: scroll;
+  margin: 0 auto;
+  position: relative;
+}
