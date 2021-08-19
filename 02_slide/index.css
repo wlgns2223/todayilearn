@@ -1,0 +1,61 @@
+.slide_wrap {
+  position: relative;
+  width: 400px;
+  margin: auto;
+  padding-bottom: 30px;
+}
+.slide_list {
+  display: flex;
+}
+.slide_box {
+  width: 100%;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+.slide_content {
+  width: 400px;
+  height: 400px;
+}
+
+.box1 {
+  background-color: lightgreen;
+}
+
+.box2 {
+  background-color: lightgrey;
+}
+
+.box3 {
+  background-color: lightsalmon;
+}
+
+.box4 {
+  background-color: lightseagreen;
+}
+
+.box5 {
+  background-color: lime;
+}
+
+.slide_pagination {
+  display: flex;
+}
+
+.dot {
+  list-style: none;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: gray;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.dot_active {
+  background-color: red;
+}
+
+.dot + .dot {
+  margin-left: 20px;
+}
