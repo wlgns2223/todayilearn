@@ -78,6 +78,7 @@ slideBtnPrev.addEventListener("click", () => {
   pageDots[curIndex].classList.add("dot_active");
 });
 
+// 페이지네이션 이벤트추가
 pagination.addEventListener("click", (e) => {
   if (e.target.tagName === "LI") {
     let curDot = document.querySelector(".dot_active");

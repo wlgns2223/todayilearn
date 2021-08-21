@@ -1,0 +1,97 @@
+:root[color-theme="light"] {
+  --backgroundColor: #fff;
+  --color: #fff;
+}
+
+:root[color-mode="dark"] {
+  --backgroundColor: #fff;
+  --color: #666;
+}
+
+html {
+  background-color: var(--backgroundColor);
+}
+
+.container {
+  background-color: var(--color);
+  color: var(--backgroundColor);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  flex-direction: column;
+}
+
+.txt {
+  font-size: 5rem;
+}
+
+input[type="checkbox"] {
+  /* input 감추기 */
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  opacity: 0;
+}
+
+input[type="checkbox"] + label {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  width: 42px;
+  height: 21px;
+  border-radius: 10px;
+  background: #666;
+  vertical-align: top;
+  color: transparent;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+input[type="checkbox"] + label:after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 19px;
+  height: 19px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.emoji {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+
+.sun {
+  position: absolute;
+  right: 1px;
+  left: auto;
+  top: -3px;
+  font-size: 0.9rem;
+  color: black;
+}
+.moon {
+  position: absolute;
+  left: 1px;
+  right: auto;
+  top: -3px;
+  font-size: 0.9rem;
+  color: black;
+}
+
+input[type="checkbox"]:checked + label {
+  background-color: #62a7ee;
+}
+input[type="checkbox"]:checked + label:after {
+  left: auto;
+  right: 1px;
+}
